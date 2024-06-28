@@ -29,15 +29,14 @@
       const camera = new THREE.PerspectiveCamera(45, width / height);
       camera.position.set(0, 0, +1000);
 
-      // 箱を作成
+      // を作成
       var coneGeometry = new THREE.ConeGeometry( 0.5, 1, 5 ); 
-      var coneMaterial = new THREE. MeshPhongMaterial( {color: BLACK} );
+      var coneMaterial = new THREE. MeshPhongMaterial( {color:0x0000ff} );
       var cone = new THREE.Mesh( coneGeometry, coneMaterial );
       cone.position.set( 0, 0, -5 );
       
      scene.add( cone );
 
-      tick();
 
       // 毎フレーム時に実行されるループイベントです
       function tick() {
